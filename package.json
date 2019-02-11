@@ -1,0 +1,19 @@
+{
+  "name": "protractor-example",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "jasmine": "^3.3.1",
+    "protractor": "^5.4.2",
+    "protractor-beautiful-reporter": "^1.2.7",
+    "selenium-webdriver": "3.6.0",
+    "webdriver-manager": "^12.1.1"
+  },
+  "scripts": {
+    "pretest": "webdriver-manager start & sleep 2",
+    "test": "protractor protractor.conf.js",
+    "posttest": "webdriver-manager shutdown"
+  },
+  "author": "",
+  "license": "ISC"
+}
