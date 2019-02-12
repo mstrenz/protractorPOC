@@ -10,7 +10,7 @@
     "webdriver-manager": "^12.1.1"
   },
   "scripts": {
-    "pretest": "webdriver-manager start & sleep 2",
+    "pretest": "./setup.sh & webdriver-manager start & sleep 2",
     "test": "protractor protractor.conf.js",
     "posttest": "webdriver-manager shutdown"
   },

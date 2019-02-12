@@ -6,11 +6,16 @@ exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: ['specs/*.js'],
     SELENIUM_PROMISE_MANAGER: false,
+    capabilities :{
+      browserName: 'chrome'
+    },
+    /*
     multiCapabilities: [{
         browserName: 'firefox'
       }, {
         browserName: 'chrome'
       }],
+      */
     jasmineNodeOpts: {
         showColors: true, // Use colors in the command line report.
         isVerbose: true
