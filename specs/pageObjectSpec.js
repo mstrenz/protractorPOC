@@ -1,9 +1,10 @@
-// spec.js
+// Example page object insertion
 var calculator = require('../pages/calculatorPage');
 
 describe('Protractor Demo App', function() {
 
     beforeEach(async function() {
+      // Example usage of page object
       await calculator.get();
     });
   
